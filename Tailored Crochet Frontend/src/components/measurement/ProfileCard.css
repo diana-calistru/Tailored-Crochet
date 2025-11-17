@@ -1,0 +1,13 @@
+.profile-card {
+    border: 1px solid #ddd;
+    padding: 1rem;
+    border-radius: 8px;
+    width: 200px;
+    cursor: pointer;
+    background-color: #fff;
+    transition: box-shadow 0.2s ease;
+}
+
+.profile-card:hover {
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}

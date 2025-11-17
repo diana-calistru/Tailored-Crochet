@@ -1,0 +1,19 @@
+@import './variables.css';
+
+body {
+  background-color: var(--dark-color);
+}
+
+.btn-primary {
+  background-color: #6c5ce7;
+  border-color: #6c5ce7;
+}
+
+.btn-primary:hover {
+  background-color: #5b4bc4;
+}
+
+.container.mt-4 {
+  padding: 20px;
+  min-height: calc(100vh - 76px); /* Account for navbar height */
+}

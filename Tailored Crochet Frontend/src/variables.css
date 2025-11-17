@@ -1,0 +1,11 @@
+:root {
+    /* Color Palette */
+    --primary-color: #eaf3d9;
+    --secondary-color: #a3b7a2;
+    --tertiary-color: #ba3f1d;
+    --success-color: #a1a315;
+    --danger-color: #9d111d;
+    --light-color: #fcfff1;
+    --dark-color: #303330;
+    --hover-color: #a1a315;
+}

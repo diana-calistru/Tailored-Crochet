@@ -1,0 +1,99 @@
+.main-container {
+    display: flex;
+    min-height: 100vh;
+    margin: 10px 100px;
+    border-radius: 25px;
+    background: var(--primary-color);
+    padding: 20px;
+    gap: 20px;
+}
+
+.left-panel {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    margin-top: 80px;
+    height: 80%;
+}
+
+.right-panel {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    min-width: 300px;
+    align-items: center;
+}
+
+.card-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+    justify-content: flex-start;
+    align-content: flex-start;
+}
+
+.card-info {
+    display: flex;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    height: 700px;
+    width: 100%;
+    min-height: 400px;
+    flex-direction: column;
+    overflow-y: auto;
+    align-items: center;
+    justify-content: center;
+}
+
+.placeholder {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    color: #888;
+    font-style: italic;
+}
+
+.profile-details-container {
+    height: 100%; /* Take full height of card-info */
+    display: flex;
+    flex-direction: column;
+}
+
+.create-btn {
+    padding: 0.5rem 1rem;
+    background-color: var(--success-color);
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    height: 50px;
+    width: 80%;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+}
+
+.create-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsive adjustments */
+@media (max-width: 992px) {
+    .main-container {
+        flex-direction: column;
+        margin: 10px;
+    }
+
+    .left-panel, .right-panel {
+        width: 100%;
+    }
+
+    .card-info {
+        height: 300px; /* Slightly smaller on mobile */
+        min-height: 300px;
+    }
+}

@@ -1,0 +1,169 @@
+.main-container-p {
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    height: 100%;
+    min-height: 100vh;
+    margin: 10px 100px;
+    border-radius: 25px;
+    background: var(--primary-color);
+    padding: 20px;
+    gap: 20px;
+}
+
+.left-panel-p {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    margin-top: 80px;
+}
+
+.right-panel-p {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 1px;
+    align-items: center;
+    justify-content: center;
+    border-left: 6px solid var(--tertiary-color);
+    padding: 20px;
+    margin-top: 10px;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+}
+
+.gallery-item {
+    width: 100px;
+    text-align: center;
+    cursor: pointer;
+    border: 2px solid transparent;
+    border-radius: 8px;
+    padding: 5px;
+    transition: 0.3s;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: auto;
+}
+
+.gallery-item.selected {
+    border-color: var(--tertiary-color);
+    background-color: var(--light-color);
+}
+
+.preview-img {
+    width: 200px;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.right-panel-p input {
+    display: block;
+    margin-bottom: 10px;
+    padding: 6px;
+    width: 80%;
+    box-sizing: border-box;
+    border-width: 2px;
+    border-style: solid;
+    border-color: #9da1a2;
+    border-radius: 6px;
+    transition: all 0.3s;
+}
+
+.right-panel-p input:focus {
+    outline: none;
+    border-width: 2px;
+    border-style: solid;
+    border-radius: 6px;
+    border-color: var(--tertiary-color);
+}
+
+.right-panel-p button {
+    margin-top: 10px;
+    padding: 8px 12px;
+    display: block;
+}
+
+.save-button {
+    padding: 0.5rem 1rem;
+    background-color: var(--success-color);
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    height: 50px;
+    width: 80%;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+}
+
+.save-button:hover:not(:disabled) {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.save-button:disabled {
+    background-color: #5f6667;
+    cursor: not-allowed;
+}
+
+.choose-profile-button {
+    padding: 1rem;
+    background-color: var(--tertiary-color);
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    height: 50px;
+    width: 50%;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+}
+
+.choose-profile-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Modal styles */
+.modal-backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0,0,0,0.4);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 10;
+}
+
+.modal {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    width: 300px;
+}
+
+.modal ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.modal li {
+    margin-bottom: 10px;
+}
+
+.modal button {
+    width: 100%;
+    margin-top: 5px;
+}

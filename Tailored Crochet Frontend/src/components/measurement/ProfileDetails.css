@@ -1,0 +1,26 @@
+.profile-details {
+    padding: 30px;
+    height: 80%;
+    width: 80%;
+    background: #f9f9f9;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+}
+
+.profile-details .close-btn,
+.profile-details .delete-btn {
+    margin-right: 1rem;
+    padding: 0.4rem 1rem;
+    border: none;
+    cursor: pointer;
+    border-radius: 6px;
+}
+
+.profile-details .close-btn {
+    background-color: #eee;
+}
+
+.profile-details .delete-btn {
+    background-color: #f44336;
+    color: white;
+}
